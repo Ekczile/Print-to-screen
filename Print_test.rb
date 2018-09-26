@@ -11,4 +11,19 @@ class PrintTest < Minitest::Test
         assert_equal("Minds",minedminds(5))
     end
 
+    def test_minedminds
+        assert_equal("MinedMinds",minedminds(15))
+    end
+    def test_seven
+        assert_equal(7,minedminds(7))
+    end
+    def test_thirty
+        assert_equal("MinedMinds",minedminds(30))
+    end
+    def test_six
+        assert_equal("Mined",minedminds(6))
+    end
+    def test_ten
+        assert_equal("Minds",minedminds(10))
+    end
 end
